@@ -9,7 +9,7 @@ const playBE = () => {
   console.log(`Hello, ${userName}!`);
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandom(1, 100);
     const isEven = randomNumber % 2 === 0;
 

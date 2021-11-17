@@ -4,5 +4,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: Linting the code
+      - uses: actions/checkout@v2
+      - name: Installing npm
+        run: make install
+      - name: Linting
         run: make lint
